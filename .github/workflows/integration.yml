@@ -1,0 +1,8 @@
+---
+name: integration tests
+
+on: [workflow_call]  # allow this workflow to be called from other workflows
+
+jobs:
+  unit-source:
+    uses: ./.github/workflows/integration_source.yml
