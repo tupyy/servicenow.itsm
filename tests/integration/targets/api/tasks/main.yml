@@ -42,6 +42,8 @@
         that:
           - base_api is changed
 
+    - debug: var=base_api.record.short_description
+
     - name: Verify creation in check mode did not create a record
       servicenow.itsm.api_info:
         resource: incident
